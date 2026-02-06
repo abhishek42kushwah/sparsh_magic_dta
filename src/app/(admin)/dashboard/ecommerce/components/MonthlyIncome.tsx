@@ -35,7 +35,7 @@ const MonthlyIncome = () => {
         opacity: 0.35,
       },
     },
-    colors: ['#95a0c5', '#56265b', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5'],
+    colors: ['#95a0c5', '#0d6efd', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5', '#95a0c5'],
     plotOptions: {
       bar: {
         borderRadius: 6,

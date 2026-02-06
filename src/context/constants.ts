@@ -6,9 +6,9 @@ export const currentYear = new Date().getFullYear()
 
 export const developedByLink = '#'
 
-export const developedBy = 'Dava Gwalior'
+export const developedBy = 'Sparsh Megic'
 
-export const contactUs = 'support@davagwalior.com'
+export const contactUs = 'support@sparshMegic.com'
 
 export const buyLink = ''
 

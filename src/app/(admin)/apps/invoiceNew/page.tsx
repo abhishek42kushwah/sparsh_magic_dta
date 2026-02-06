@@ -93,7 +93,7 @@ const Invoice = () => {
               <Row className="mt-3 invoice-address-row">
                 <Col md={4}>
                   <h6 className="fw-bold mb-1">From :</h6>
-                  <p className="mb-0 fw-semibold">Dava Gwalior Private Limited</p>
+                  <p className="mb-0 fw-semibold">Sparsh Megic Private Limited</p>
                   <small>
                     Govindpuri, City Center, Gwalior (MP), India
                     <br />

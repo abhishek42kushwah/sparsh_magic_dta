@@ -46,7 +46,7 @@ const TrafficSources = () => {
     stroke: {
       lineCap: 'butt',
     },
-    colors: ['#56265b'],
+    colors: ['#0d6efd'],
     grid: {
       padding: {
         top: -10,

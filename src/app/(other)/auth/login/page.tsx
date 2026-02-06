@@ -1,31 +1,67 @@
-// import IconifyIcon from '@/components/wrappers/IconifyIcon'
 import LoginForm from './components/LoginForm'
-
-import logoSmImg from '@/assets/images/dava-left-logo.png'
-import { Card, CardBody, Col } from 'react-bootstrap'
+import logoSmImg from '@/assets/images/sparshMegic.png'
 import PageMetaData from '@/components/PageMetaData'
-import { Link } from 'react-router-dom'
+import { Card, Col, Row } from 'react-bootstrap'
 
 const Login = () => {
   return (
     <>
       <PageMetaData title="Login" />
-      <Col lg={4} className="mx-auto">
-        <Card>
-          <CardBody className="p-0 bg-white auth-header-box rounded-top">
-            <div className="text-center ">
-              <Link to="/" className="logo logo-admin">
-                <img src={logoSmImg} height={100} alt="logo" className="auth-logo" />
-              </Link>
-              <h4 className="mt-3 mb-1 fw-semibold text-black fs-18">Let&apos;s Get Started Dava Gwalior</h4>
-              <p className="text-muted fw-medium mb-0">Sign in to continue to Dava Gwalior.</p>
-            </div>
-          </CardBody>
-          <CardBody className="pt-0">
-            <LoginForm />
-          </CardBody>
-        </Card>
-      </Col>
+
+      <Row className="vh-100 justify-content-center align-items-center">
+        <Col lg={9} md={10} sm={11}>
+          <Card className="shadow-lg border-0 rounded-4 overflow-hidden bg-body">
+            <Row className="g-0">
+
+              {/* ✅ LEFT SIDE */}
+              <Col
+                lg={6}
+                className="d-flex flex-column justify-content-center align-items-center text-center "    style={{ background: "rgba(var(--bs-primary-rgb), 0.35)" }}
+              >
+                <div  className="mb-4">
+                  <img
+                    src={logoSmImg}
+                    height={120}
+                    alt="logo"
+                    className="auth-logo"
+                  />
+                </div>
+
+                <h2 className="fw-bold text-body">
+                  Welcome Back 👋
+                </h2>
+
+                <p className="text-secondary mt-2">
+                  Sign in to continue to <br />
+                  <span className="fw-semibold text-black">
+                    Sparsh Magic Dashboard
+                  </span>
+                </p>
+
+                <div className="mt-4">
+                  <p className="text-secondary small">
+                    Manage orders, delivery, store & more easily.
+                  </p>
+                </div>
+              </Col>
+
+              {/* ✅ RIGHT SIDE FORM */}
+              <Col lg={6} className="p-5 bg-body">
+                <h3 className="fw-semibold mb-3 text-body">
+                  Login Account
+                </h3>
+
+                <p className="text-secondary mb-4">
+                  Enter your Email & password to login
+                </p>
+
+                <LoginForm />
+              </Col>
+
+            </Row>
+          </Card>
+        </Col>
+      </Row>
     </>
   )
 }

@@ -11,7 +11,7 @@ const Footer = () => {
             <Card className="mb-0 rounded-bottom-0">
               <CardBody>
                 <p className="text-muted mb-0">
-                  © {currentYear} Dava Gwalior{' '}
+                  © {currentYear} Sparsh Megic{' '}
                   <span className="text-muted d-none d-sm-inline-block float-end icons-center">
                     {' '}
                     Crafted with <IconifyIcon icon="iconoir:heart" className="text-danger" /> by Eco Digitas  

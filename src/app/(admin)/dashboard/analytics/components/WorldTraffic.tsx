@@ -44,14 +44,14 @@ const WorldTraffic = () => {
     },
     regionStyle: {
       initial: {
-        fill: 'rgba(86, 38, 91, 0.35)',
+        fill: 'rgba(13, 110, 253, 0.35)',
         fillOpacity: 1,
       },
     },
     markerStyle: {
       initial: {
         r: 5,
-        fill: '#56265b',
+        fill: '#0d6efd',
         fillOpacity: 1,
         stroke: '#FFF',
         strokeWidth: 1,

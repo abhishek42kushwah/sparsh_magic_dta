@@ -11,16 +11,22 @@ export const MENU_ITEMS: MenuItemType[] = [
     icon: 'iconoir:reports-solid',
     label: 'Dashboards',
     children: [
-      // {
-      //   key: 'dashboard-analytics',
-      //   label: 'Analytics',
-      //   url: '/dashboard/analytics',
-      //   parentKey: 'dashboards',
-      // },
+      {
+        key: 'dashboard-analytics',
+        label: 'Analytics',
+        url: '/dashboard/analytics',
+        parentKey: 'dashboards',
+      },
       {
         key: 'dashboard-ecommerce',
         label: 'Order Analytics ',
         url: '/dashboard/ecommerce',
+        parentKey: 'dashboards',
+      },
+       {
+        key: 'dashboard-product',
+        label: 'Product Analytics ',
+        url: '/apps/projects/clients',
         parentKey: 'dashboards',
       },
     ],
@@ -37,13 +43,13 @@ export const MENU_ITEMS: MenuItemType[] = [
         url: '/apps/ecommerce/orders',
         parentKey: 'Orders',
       },
-      // {
+      {
 
-      //   key: 'dashboard-ecommerce-Ordersanalytics',
-      //   label: 'Orders Analytics ',
-      //   url: '/apps/ecommerce/orders/ordersanalytics',
-      //   parentKey: 'Orders Analytics',
-      // },
+        key: 'dashboard-ecommerce-Ordersanalytics',
+        label: 'Orders Analytics ',
+        url: '/apps/ecommerce/orders/ordersanalytics',
+        parentKey: 'Orders Analytics',
+      },
 
     ],
   },
@@ -68,99 +74,6 @@ export const MENU_ITEMS: MenuItemType[] = [
      
     ],
   },
-  // {
-  //   key: 'Lead',
-  //   icon: 'iconoir:user',
-  //   label: 'Lead',
-  //   children: [
-
-  //     {
-  //       key: 'dashboard-ecommerce-lead',
-  //       label: 'Lead ',
-  //       url: '/app/ecommerce/lead',
-  //       parentKey: 'Lead',
-  //     },
-  //     {
-  //       key:'dashboard-ecommerce-leadanalytics',
-  //       label:"Lead Analytics",
-  //       url: '/apps/ecommerce/lead/leadanalytics',
-  //       parentKey:'LeadAnalytics'
-  //     },
-  //     {
-  //       key: 'dashboard-ecommerce-crmlead',
-  //       label: 'Crm Lead ',
-  //       url: '/app/ecommerce/crmlead',
-  //       parentKey: 'Orders',
-  //     },
-  //     {
-  //       key: 'dashboard-ecommerce-crmcallerlist',
-  //       label: 'Crm Caller List ',
-  //       url: '/app/ecommerce/crmcallerlist',
-  //       parentKey: 'CrmCallerList',
-  //     },
-  //     {
-  //       key: 'dashboard-ecommerce-orders-usersList',
-  //       label: 'Users List',
-  //       url: '/apps/ecommerce/orders/usersList',
-  //       parentKey: 'UsersList',
-  //     },
-  //     {
-  //       key: 'dashboard-ecommerce-leadAction',
-  //       label: 'Lead Action',
-  //       url: '/apps/ecommerce/leadaction',
-  //       parentKey: 'Lead Action',
-  //     },
-
-  //   ],
-  // },
-
-  {
-    key: 'Products',
-    icon: 'iconoir:flower',
-    label: 'Product Managment',
-    children: [
-
-      {
-        key: 'dashboard-ecommerce-products',
-        label: 'Product list',
-        url: '/apps/ecommerce/products',
-        parentKey: 'Products',
-      },
-      //   {
-      //   key: 'dashboard-ecommerce-generic-products',
-      //   label: 'Generic Products list ',
-      //   url: '/apps/ecommerce/generic-products',
-      //   parentKey: 'Products',
-      // },
-      {
-        key: 'ddashboard-ecommerce-category',
-        label: 'Category List ',
-        url: '/apps/ecommerce/category',
-        parentKey: 'Products',
-      },
-
-      {
-        key: 'ddashboard-ecommerce-subcategory',
-        label: 'Sub Category List ',
-        url: '/apps/ecommerce/subcategory',
-        parentKey: 'Products',
-      },
-      {
-        key: 'ddashboard-ecommerce-masterCategory',
-        label: 'Master Category List',
-        url: '/apps/ecommerce/mastercategory',
-        parentKey: 'Products',
-      },
-
-      {
-        key: 'ddashboard-ecommerce-brand',
-        label: 'Brand  List ',
-        url: '/apps/ecommerce/brand',
-        parentKey: 'Products',
-      },
-
-    ],
-  },
     {
     key: 'Users',
     icon: 'iconoir:user',
@@ -175,44 +88,8 @@ export const MENU_ITEMS: MenuItemType[] = [
       },
     ],
   },
-   {
-    key: 'Admin_Role',
-    icon: 'iconoir:community',
-    label: 'Admin User & Role',
-    children: [
-      {
-        key: 'admin-ecommerce',
-        label: 'Admin User List',
-        url: '/apps/ecommerce/admin-user-list',
-        parentKey: 'Admin_Role',
-      },
-      {
-        key: 'admin-ecommerce',
-        label: 'Admin Roles List',
-        url: '/apps/ecommerce/admin-roles-list',
-        parentKey: 'Admin_Role',
-      },
-      {
-        key: 'admin-ecommerce',
-        label: 'Permissions List',
-        url: '/apps/ecommerce/admin-permissions-list',
-        parentKey: 'Admin_Role',
-      },
-    ],
-  },
-  {
-    key: 'Delivery',
-    icon: 'iconoir:delivery',
-    label: 'Delivery',
-    children: [
-      {
-        key: 'dashboard-ecommerce-store',
-        label: 'Order List ',
-        url: '/app/ecommerce/order-list-delivery',
-        parentKey: 'Delivery',
-      },
-    ],
-  },
+  
+ 
 
   {
     key: 'Delivery_list',
@@ -291,20 +168,7 @@ export const MENU_ITEMS: MenuItemType[] = [
     ],
   },
 
-  {
-    key: 'Banner',
-    icon: 'iconoir:cinema-old',
-    label: 'Banner',
-    children: [
-      {
-        key: 'dashboard-ecommerce-home-banner',
-        label: 'Home list ',
-        url: '/app/ecommerce/banner',
-        parentKey: 'Banner',
-      },
-
-    ],
-  },
+  
 
   {
     key: 'Settings',
@@ -320,20 +184,7 @@ export const MENU_ITEMS: MenuItemType[] = [
 
     ],
   },
-  {
-    key: 'wallet',
-    icon: 'iconoir:wallet',
-    label: 'Wallet',
-    children: [
-
-      {
-        key: 'Wallet-ecommerce',
-        label: 'Wallet ',
-        url: '/app/ecommerce/wallettxn',
-        parentKey: 'wallet',
-      },
-    ],
-  },
+  
 
 
   // {

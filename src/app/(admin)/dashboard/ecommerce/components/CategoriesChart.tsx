@@ -43,7 +43,7 @@ const CategoriesChart = () => {
         enabled: false
       },
       style: {
-        colors: ['#56265b'],
+        colors: ['#0d6efd'],
         fontWeight: 400,
         fontSize: '13px'
       }
@@ -51,16 +51,16 @@ const CategoriesChart = () => {
     xaxis: {
       categories: hasData ? ['Mobile', 'Men Fashion', 'Women Fashion', 'Beauty', 'Health', 'Sports', 'Kids', 'Music'] : []
     },
-    colors: [
-      'rgba(86, 38, 91, 0.45)',
-      'rgba(86, 38, 91, 0.4)',
-      'rgba(86, 38, 91, 0.35)',
-      'rgba(86, 38, 91, 0.3)',
-      'rgba(86, 38, 91, 0.25)',
-      'rgba(86, 38, 91, 0.2)',
-      'rgba(86, 38, 91, 0.15)',
-      'rgba(86, 38, 91, 0.1)'
-    ],
+    colors:[
+  'rgba(13, 110, 253, 0.45)',
+  'rgba(13, 110, 253, 0.4)',
+  'rgba(13, 110, 253, 0.35)',
+  'rgba(13, 110, 253, 0.3)',
+  'rgba(13, 110, 253, 0.25)',
+  'rgba(13, 110, 253, 0.2)',
+  'rgba(13, 110, 253, 0.15)',
+  'rgba(13, 110, 253, 0.1)',
+],
     legend: {
       show: false
     }

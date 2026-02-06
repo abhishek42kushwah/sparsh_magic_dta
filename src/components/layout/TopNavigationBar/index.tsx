@@ -3,14 +3,14 @@ import useScrollEvent from '@/hooks/useScrollEvent'
 import clsx from 'clsx'
 // import LanguageDropdown from './components/LanguageDropdown'
 import LeftSideBarToggle from './components/LeftSideBarToggle'
-// import Notifications from './components/Notifications'
+import Notifications from './components/Notifications'
 import ProfileDropdown from './components/ProfileDropdown'
-// import ThemeModeToggle from './components/ThemeModeToggle'
-import { useAuthContext }  from "@/context/useAuthContext"
+import ThemeModeToggle from './components/ThemeModeToggle'
+
 const TopNavigationBar = () => {
   const { scrollY } = useScrollEvent()
-   const { user } = useAuthContext()
-  const role = user?.role
+  
+
   return (
     <div className="topbar d-print-none">
       <div className="container-xxl">
@@ -19,7 +19,7 @@ const TopNavigationBar = () => {
             <LeftSideBarToggle />
 
             <li className="mx-3 welcome-text">
-              <h3 className="mb-0 fw-bold text-truncate">Hello   ,{`${role}`}!</h3>
+              <h3 className="mb-0 fw-bold text-truncate">Hello !</h3>
             </li>
           </ul>
           <ul className="topbar-item list-unstyled d-inline-flex align-items-center mb-0">
@@ -32,8 +32,8 @@ const TopNavigationBar = () => {
               </form>
             </li>
             {/* <LanguageDropdown /> */}
-            {/* <ThemeModeToggle /> */}
-            {/* <Notifications /> */}
+            <ThemeModeToggle />
+            <Notifications />
             <ProfileDropdown />
           </ul>
         </nav>

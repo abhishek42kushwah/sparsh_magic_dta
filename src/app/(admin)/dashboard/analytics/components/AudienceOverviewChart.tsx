@@ -83,7 +83,8 @@ const AudienceOverviewChart = () => {
         },
       ],
     },
-    colors: ['#56265b', 'rgba(86, 38, 91, 0.35)'],
+    colors: ['#0d6efd', 'rgba(13, 110, 253, 0.35)'],
+     
     dataLabels: {
       enabled: false,
     },
