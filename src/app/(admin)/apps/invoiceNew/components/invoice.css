@@ -1,0 +1,27 @@
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .invoice-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    width: 100% !important;
+  }
+}
+
+@media print {
+  .invoice-address-row {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .invoice-address-row .col-md-4 {
+    width: 33% !important;
+    max-width: 33% !important;
+    display: block !important;
+  }
+}
